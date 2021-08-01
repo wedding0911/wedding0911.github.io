@@ -263,17 +263,17 @@
                         <div class="section-title animation fadeInUp">
                             <h2> 고맙습니다. </h2>
                             <p>
-                                <a onclick="ga('send', 'event', '인스타그램 페이지', '링크 클릭');" target="_blank" href="https://forms.gle/72MRnH9gT9GQnuLb7" style="text-decoration: underline;color:#37A4FF;">
+                                <a onclick="ga('send', 'event', '참석 설문', '링크 클릭');" target="_blank" href="https://forms.gle/72MRnH9gT9GQnuLb7" style="text-decoration: underline;color:#37A4FF;">
                                     참석 설문 꼭 해주세요!
                                 </a>
                             </p>
-                            <p onclick='document.getElementById("account_a").style.display = "block";'>
+                            <p onclick='document.getElementById("account_a").style.display = "block";ga("send", "event", "계좌 번호", "신랑 계좌번호 보기");'>
                                 신랑 계좌번호 보기
-                                <a id='account_a' style='display: none;' onclick='copyToClipboard("93202925901019")'>기업은행 932-029259-01-019  예금주: 김환희 (눌러서 계좌번호 복사)</a>
+                                <a id='account_a' style='display: none;' onclick='copyToClipboard("93202925901019");ga("send", "event", "계좌 번호", "신랑 계좌번호 복사");'>기업은행 932-029259-01-019  예금주: 김환희 (눌러서 계좌번호 복사)</a>
                             </p>
-                            <p onclick='document.getElementById("account_b").style.display = "block";'>
+                            <p onclick='document.getElementById("account_b").style.display = "block";ga("send", "event", "계좌 번호", "신부 계좌번호 보기");'>
                                 신부 계좌번호 보기
-                                <a id='account_b' style='display: none;' onclick='copyToClipboard("110216876938")'>신한은행 110-216-876938  예금주: 이수란 (눌러서 계좌번호 복사)</a>
+                                <a id='account_b' style='display: none;' onclick='copyToClipboard("110216876938");ga("send", "event", "계좌 번호", "신부 계좌번호 복사");'>신한은행 110-216-876938  예금주: 이수란 (눌러서 계좌번호 복사)</a>
                             </p>
                         </div>
                     </div>
@@ -322,7 +322,15 @@
     <script src="js/owlcarousel/owl.carousel.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/main-slider-fade.js"></script>
-    <script>(function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-90723635-1', 'auto'); ga('send', 'pageview');</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RZCM9WBY2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-3RZCM9WBY2');
+    </script>
     <script src="js/jquery.scrolldepth.min.js"></script>
     <script>jQuery(function () { jQuery.scrollDepth(); });</script>
     <script>
