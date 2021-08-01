@@ -60,6 +60,7 @@
                                 <br>
                                 <br>
                                 <br>
+                                <br>
                                 <div class="banner-text withlove medium light">
                                     <h1 class='black_text'>이수란과 김환희의 결혼식에 <br><br>초대합니다.</h1>
                                 </div>
@@ -139,9 +140,10 @@
         <section id="couple">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-offset-2 col-md-8 text-center">
+                    <!-- <div class="col-sm-12 col-md-offset-2 col-md-8 text-center"> -->
+                    <div class="col-sm-12 col-md-12 text-center">
                         <div class="photo-item frame-border">
-                            <img src="./images/main_photo.jpg" alt="">
+                            <img src="./images/main.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -259,10 +261,19 @@
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8 text-center">
                         <div class="section-title animation fadeInUp">
-                            <h2> 고맙습니다. </h2> <p>
-                                <a onclick="ga('send', 'event', '인스타그램 페이지', '링크 클릭');" target="_blank" href="http://instagram.com/renderer86/" style="text-decoration: underline;color:#37A4FF;">
+                            <h2> 고맙습니다. </h2>
+                            <p>
+                                <a onclick="ga('send', 'event', '인스타그램 페이지', '링크 클릭');" target="_blank" href="https://forms.gle/72MRnH9gT9GQnuLb7" style="text-decoration: underline;color:#37A4FF;">
                                     참석 설문 꼭 해주세요!
                                 </a>
+                            </p>
+                            <p onclick='document.getElementById("account_a").style.display = "block";'>
+                                신랑 계좌번호 보기
+                                <a id='account_a' style='display: none;' onclick='copyToClipboard("93202925901019")'>기업은행 932-029259-01-019  예금주: 김환희 (눌러서 계좌번호 복사)</a>
+                            </p>
+                            <p onclick='document.getElementById("account_b").style.display = "block";'>
+                                신부 계좌번호 보기
+                                <a id='account_b' style='display: none;' onclick='copyToClipboard("110216876938")'>신한은행 110-216-876938  예금주: 이수란 (눌러서 계좌번호 복사)</a>
                             </p>
                         </div>
                     </div>
@@ -314,5 +325,15 @@
     <script>(function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-90723635-1', 'auto'); ga('send', 'pageview');</script>
     <script src="js/jquery.scrolldepth.min.js"></script>
     <script>jQuery(function () { jQuery.scrollDepth(); });</script>
+    <script>
+        function copyToClipboard(val) {
+            const t = document.createElement("textarea");
+            document.body.appendChild(t);
+            t.value = val;
+            t.select();
+            document.execCommand('copy');
+            document.body.removeChild(t);
+        }
+    </script>
 </body>
 </html>
