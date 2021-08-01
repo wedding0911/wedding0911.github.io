@@ -33,6 +33,7 @@
         @media screen and (max-width: 768px) {
             #title_div {
                 height: 320px !important;
+                background-size: cover !important;
             }
         }
     </style>
@@ -52,36 +53,12 @@
     </div>
 
     <!-- main -->
-    <section id="main-slider" class="flexslider fullscreen">
-        <!-- <div class="slide-title-outter-wrapper">
-            <div class="slide-title-inner-wrapper">
-                <div class="slide-title">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-offset-3 col-md-6 animation delay1 fadeInUp">
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-
+    <!-- <section id="main-slider" class="flexslider fullscreen"> -->
+    <section id="main-slider" class="flexslider" style='min-height: 320px;'>
         <ul class="slides">
             <li>
-                <div id='title_div' data-stellar-ratio="0.8" class="slide-image" style="background-image:url(./images/title_new.png); background-position:center center; background-repeat:no-repeat; background-size:cover;">
+                <div id='title_div' data-stellar-ratio="0.8" class="slide-image" style="background-image:url(./images/title_new.png); background-position:
+                 center; background-repeat:no-repeat; background-size:contain; min-height: 320px;">
                 </div>
                 <!-- <div class="slide-overlay" style="opacity:0">
                 </div> -->
