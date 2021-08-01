@@ -263,17 +263,17 @@
                         <div class="section-title animation fadeInUp">
                             <h2> 고맙습니다. </h2>
                             <p>
-                                <a onclick="ga('send', 'event', '참석 설문', '링크 클릭');" target="_blank" href="https://forms.gle/72MRnH9gT9GQnuLb7" style="text-decoration: underline;color:#37A4FF;">
+                                <a onclick="gtag('event', 'attendance_link_click');" target="_blank" href="https://forms.gle/72MRnH9gT9GQnuLb7" style="text-decoration: underline;color:#37A4FF;">
                                     참석 설문 꼭 해주세요!
                                 </a>
                             </p>
-                            <p onclick='document.getElementById("account_a").style.display = "block";ga("send", "event", "계좌 번호", "신랑 계좌번호 보기");'>
+                            <p onclick='document.getElementById("account_a").style.display = "block";gtag("event", "show_account_a");'>
                                 신랑 계좌번호 보기
-                                <a id='account_a' style='display: none;' onclick='copyToClipboard("93202925901019");ga("send", "event", "계좌 번호", "신랑 계좌번호 복사");'>기업은행 932-029259-01-019  예금주: 김환희 (눌러서 계좌번호 복사)</a>
+                                <a id='account_a' style='display: none;' onclick='copyToClipboard("93202925901019");gtag("event", "copy_account_a");'>기업은행 932-029259-01-019  예금주: 김환희 (눌러서 계좌번호 복사)</a>
                             </p>
-                            <p onclick='document.getElementById("account_b").style.display = "block";ga("send", "event", "계좌 번호", "신부 계좌번호 보기");'>
+                            <p onclick='document.getElementById("account_b").style.display = "block";gtag("event", "show_account_b");'>
                                 신부 계좌번호 보기
-                                <a id='account_b' style='display: none;' onclick='copyToClipboard("110216876938");ga("send", "event", "계좌 번호", "신부 계좌번호 복사");'>신한은행 110-216-876938  예금주: 이수란 (눌러서 계좌번호 복사)</a>
+                                <a id='account_b' style='display: none;' onclick='copyToClipboard("110216876938");gtag("event", "copy_account_b");'>신한은행 110-216-876938  예금주: 이수란 (눌러서 계좌번호 복사)</a>
                             </p>
                         </div>
                     </div>
